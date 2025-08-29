@@ -1,4 +1,3 @@
-/* Reset and Base Styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -45,7 +44,7 @@ body {
   background-color: #ffcc00;
 }
 
-/* Navigation Bar */
+/* Navigation */
 nav {
   background-color: #333;
 }
@@ -84,7 +83,7 @@ section {
   margin-bottom: 60px;
 }
 
-/* Gallery Section */
+/* Gallery */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -102,92 +101,4 @@ section {
 
 .gallery img:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-}
-
-/* Contact Form */
-.contact-box {
-  max-width: 500px;
-  margin: 0 auto;
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: left;
-}
-
-form label {
-  display: block;
-  margin-top: 15px;
-  font-weight: bold;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 6px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 16px;
-}
-
-button {
-  background-color: #004080;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  margin-top: 20px;
-  font-size: 16px;
-}
-
-button:hover {
-  background-color: #003060;
-}
-
-/* WhatsApp Button */
-.whatsapp-button {
-  display: inline-block;
-  background-color: #25D366;
-  color: white;
-  padding: 12px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 6px;
-  text-decoration: none;
-  margin-top: 20px;
-  transition: background-color 0.3s ease;
-}
-
-.whatsapp-button:hover {
-  background-color: #1ebe57;
-}
-
-/* Google Map Container */
-.map-container {
-  max-width: 600px;
-  margin: 0 auto;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-/* Footer Section */
-footer {
-  background-color: #004080;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-}
-
-footer a {
-  color: #ffd700;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
+  box-shadow: 0 6px 12px rgba(0,0,0
