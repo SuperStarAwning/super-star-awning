@@ -1,3 +1,4 @@
+/* Reset and Base Styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -44,7 +45,7 @@ body {
   background-color: #ffcc00;
 }
 
-/* Navigation */
+/* Navigation Bar */
 nav {
   background-color: #333;
 }
@@ -83,7 +84,7 @@ section {
   margin-bottom: 60px;
 }
 
-/* Gallery */
+/* Gallery Section */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -101,4 +102,165 @@ section {
 
 .gallery img:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0,0,0
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Testimonials Section */
+#testimonials {
+  background-color: #f0f8ff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.testimonial-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.testimonial {
+  background-color: white;
+  padding: 20px;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-style: italic;
+}
+
+.testimonial h4 {
+  margin-top: 15px;
+  color: #004080;
+  font-weight: bold;
+}
+
+/* Contact Form */
+.contact-box {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #004080;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #003060;
+}
+
+/* WhatsApp Box */
+.whatsapp-box {
+  margin-top: 30px;
+  background-color: #e6f7ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.whatsapp-box h3 {
+  margin-bottom: 10px;
+  color: #004080;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebe57;
+}
+
+/* Google Map */
+.map-container {
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+.footer-content {
+  background-color: #004080;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-info {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.footer-info a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+.footer-info a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-box,
+  .testimonial,
+  .whatsapp-box {
+    max-width: 100%;
+    margin: 0 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .cta-button,
+  .whatsapp-button {
+    width: 90%;
+    font-size: 16px;
+  }
+}
